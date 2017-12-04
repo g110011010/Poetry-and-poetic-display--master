@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:padding="10dp"
+    android:background="?attr/colorPrimary">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/id_select_nv_circleImageView"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerInParent="true"
+        android:src="@drawable/nav_self" />
+    <TextView
+        android:id="@+id/id_select_nv_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="81364132@QQ.com"
+        android:textColor="#FFF"
+        android:textSize="14sp" />
+    <TextView
+        android:id="@+id/id_select_nv_username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/id_select_nv_email"
+        android:text="黄志鹏"
+        android:textColor="#FFF"
+        android:textSize="14sp" />
+
+</RelativeLayout>

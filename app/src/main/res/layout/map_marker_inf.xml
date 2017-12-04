@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/id_marker_info"
+    android:layout_width="match_parent"
+    android:layout_height="320dp">
+    <RelativeLayout
+        android:id="@+id/id_maker_inf_bottom_relativeLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="210dp"
+        android:layout_alignParentBottom="true">
+    <RelativeLayout
+        android:id="@+id/id_maker_inf_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_margin="5dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/maker_inf_bottom_bg" >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/id_marker_poem_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="古诗词题目"
+                android:textColor="#fff5eb" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal" >
+            <ImageView
+                android:id="@+id/id_marker_poem_vote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/maker_inf_bottom_vote"
+                android:clickable="true" />
+            <TextView
+                android:id="@+id/id_marker_poem_vote_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="741"
+                android:layout_gravity="center"
+                android:textColor="#F8F8FF" />
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/id_marker_poem_content_CardView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_above="@id/id_maker_inf_bottom"
+        app:cardCornerRadius="4dp">
+    <TextView
+        android:id="@+id/id_marker_poem_content"
+        android:layout_width="fill_parent"
+        android:layout_height="130dp"
+        android:textColor="#F8F8FF"
+        android:text="古诗词内容"
+        android:textSize="20dp"
+        android:gravity="center"
+        android:scrollbars="vertical"
+        android:scrollbarStyle="insideOverlay"
+        android:background="#cc4e5a6b"
+    />
+    </android.support.v7.widget.CardView>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+    android:id="@+id/id_map_button_relative"
+    android:layout_width="wrap_content"
+    android:layout_height="110dp"
+    android:layout_above="@id/id_maker_inf_bottom_relativeLayout"
+    >
+    <android.support.design.widget.FloatingActionButton
+    app:backgroundTint="#ff636363"
+    android:id="@+id/id_marker_back"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="7dp"
+    android:src="@drawable/icon_back"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentLeft="true"
+    app:fabSize="mini"
+    >
+    </android.support.design.widget.FloatingActionButton>
+     <android.support.design.widget.FloatingActionButton
+         app:backgroundTint="#ff636363"
+         android:id="@+id/id_marker_VenueDisplay"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_margin="7dp"
+         android:layout_alignParentBottom="true"
+         android:layout_toRightOf="@+id/id_marker_back"
+         app:fabSize="mini"
+            >
+     </android.support.design.widget.FloatingActionButton>
+    <android.support.design.widget.FloatingActionButton
+        app:backgroundTint="#ff636363"
+        android:id="@+id/id_marker_voicePlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="7dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/id_marker_VenueDisplay"
+        app:fabSize="mini"
+        >
+    </android.support.design.widget.FloatingActionButton>
+    <com.linroid.filtermenu.library.FilterMenuLayout
+    android:id="@+id/id_map_filter_menu"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="7dp"
+
+    app:fm_expandedRadius="60dp"
+    app:fm_collapsedRadius="20dp"
+    app:fm_centerBottom="8dp"
+    app:fm_centerRight="8dp"
+    app:fm_primaryColor="#ff636363"
+    app:fm_primaryDarkColor="#ff292929">
+    </com.linroid.filtermenu.library.FilterMenuLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

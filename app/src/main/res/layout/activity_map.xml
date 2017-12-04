@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:aigestudio="http://schemas.android.com/tools"
+    android:id="@+id/id_main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#cc4e5a6b">
+    <com.baidu.mapapi.map.MapView
+        android:id="@+id/bmapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top">
+        <com.example.lbstest.MapSearch
+            android:id="@+id/id_main_Search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <com.example.lbstest.MapVenueDisplay
+            android:id="@+id/id_main_venueDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/id_main_Search"/>
+    </RelativeLayout>
+    <com.example.lbstest.MarkerInfo
+        android:id="@+id/id_main_marker_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|left"
+        >
+    </com.example.lbstest.MarkerInfo>
+    <com.example.lbstest.MarkerInfo
+        android:id="@+id/id_main_marker_info_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|left"
+        >
+    </com.example.lbstest.MarkerInfo>
+
+</android.support.design.widget.CoordinatorLayout>

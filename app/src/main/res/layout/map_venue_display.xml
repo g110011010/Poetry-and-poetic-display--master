@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+    <android.support.v7.widget.CardView
+        android:id="@+id/id_marker_poem_content_CardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#cc4e5a6b"
+        android:layout_margin="5dp"
+        app:cardCornerRadius="15dp">
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:aigestudio="http://schemas.android.com/apk/res-auto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            xmlns:app="http://schemas.android.com/tools"
+            android:background="#cc4e5a6b"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <com.aigestudio.wheelpicker.WheelPicker
+                android:id="@+id/id_venue_wheel"
+                android:layout_width="80dp"
+                android:layout_height="120dp"
+                android:background="#cc4e5a6b"
+                aigestudio:wheel_atmospheric="true"
+                aigestudio:wheel_curved="true"
+                aigestudio:wheel_cyclic="true"
+                aigestudio:wheel_item_align="center"
+                aigestudio:wheel_item_text_color="@color/white"
+                aigestudio:wheel_item_text_size="24sp"
+                aigestudio:wheel_selected_item_text_color="#ff292929" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>
